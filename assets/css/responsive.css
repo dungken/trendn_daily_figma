@@ -1,27 +1,582 @@
+/* Extra large screens (large desktops) */
 @media (max-width: 1400px) {
-   
+  /* HEADER SECTION */
+  /* INTRODUCTION SECTION */
+  .counter-box {
+    left: 9%;
+  }
+
+  .button-get-cash {
+    top: 229%;
+    left: 28%;
+  }
+
+  .effect-scroll-down {
+    top: 300%;
+    left: 40%;
+  }
+  /* FEATURED SECTION */
+  /* PRIZE SECTION */
+
+  .astronaut-img img {
+    right: 0%;
+  }
+  /* AWARD SECTION */
+  .awards-logos img {
+    max-width: 100px;
+  }
+  /* WINNER SECTION */
+  .wp-button-carousel .btn-prev {
+    left: 2%;
+  }
+  .wp-button-carousel .btn-next {
+    right: 2%;
+  }
+  .carousel-item>.row .col-md-7 {
+    width: 50%;
+  }
+  /* FAQ SECTION */
+  /* FOOTER SECTION */
 }
 
+/* Large devices (desktops, HD screens) */
 @media (max-width: 1200px) {
-   
+  /* HEADER SECTION */
+  /* INTRODUCTION SECTION */
+  .img-mr-beast {
+    max-width: 50%;
+  }
+
+  .img-surprised-girl {
+    max-width: 45%;
+  }
+
+  .counter-box {
+    left: 7%;
+  }
+
+  .counter-item-box {
+    padding: 4px 17px;
+  }
+
+  .button-get-cash {
+    left: 24%;
+  }
+
+  .effect-scroll-down {
+    left: 37%;
+  }
+
+  /* FEATURED SECTION */
+  #featured-section .container {
+    margin: 0 20px;
+  }
+  /* PRIZE SECTION */
+  .achieved-prize {
+    width: 88%;
+  }
+  .astronaut-img img {
+    max-width: 570px;
+  }
+  /* AWARD SECTION */
+  .awards-logos {
+    gap: 24px;
+  }
+  /* WINNER SECTION */
+  .carousel-item>.row .col-md-4 img{
+    width: 121%;
+  }
+  .wp-winner-wall-title img {
+    max-width: 90%;
+  }
+
+  .winner-content p {
+    font-size: 30px;
+  }
+  /* FAQ SECTION */
+  /* FOOTER SECTION */
 }
 
+/* Small desktop screens */
 @media (max-width: 1024px) {
-    
+  /* HEADER SECTION */
+  /* INTRODUCTION SECTION */
+  /* FEATURED SECTION */
+  .featured-track img {
+    max-width: 118px;
+  }
+  /* PRIZE SECTION */
+  .achieved-prize {
+    width: 93%;
+    padding: 25px;
+  }
+  .achieved-prize-list {
+    gap: 0px;
+  }
+  .achieved-prize-number h4 {
+    font-size: 28px;
+  }
+  .step-how-to-get h2 {
+    font-size: 40px;
+  }
+  .astronaut-img img {
+    max-width: 521px;
+    top: 21%;
+    right: 0;
+  }
+
+  /* AWARD SECTION */
+  /* WINNER SECTION */
+  /* FAQ SECTION */
+  /* FOOTER SECTION */
 }
 
-@media (max-width: 998px) {
-    
+/* Larger tablets and hybrid devices */
+@media (max-width: 992px) {
+  /* HEADER SECTION */
+  /* INTRODUCTION SECTION */
+  .free-cash img, .giveaway img {
+    max-width: 150%;
+  }
+
+  .cluster-intro {
+    left: 10%;
+    right: 10%;
+  } 
+
+  .counter-box {
+    left: 27%;
+  }
+
+  .button-get-cash {
+    left: 37%;
+    top: 209%;
+  }
+
+  .effect-scroll-down {
+    left: 45%;
+    top: 253%;
+  }
+
+
+  /* FEATURED SECTION */
+  .featured-track img {
+    max-width: 107px;
+  }
+  /* PRIZE SECTION */
+  .prize-section .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .prize-section {
+    padding: 20px;
+  }
+
+  .achieved-prize-number {
+    flex-basis: 46%;
+  }
+
+  .astronaut-img img {
+    top: inherit;
+  }
+
+  .step-item {
+    width: 75%;
+  }
+
+  /* AWARD SECTION */
+  #award-section .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .awards-logos img {
+    max-width: 90px;
+  }
+
+  #winner-section .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+
+  /* WINNER SECTION */
+  /* FAQ SECTION */
+  /* FOOTER SECTION */
 }
 
+/* Medium devices (small laptops, landscape tablets) */
+@media (max-width: 896px) {
+  /* HEADER SECTION */
+  /* INTRODUCTION SECTION */
+  .cluster-intro {
+    left: 5%;
+  }
+  /* FEATURED SECTION */
+  
+  .featured-track img {
+    max-width: 95px;
+  }
+
+  /* PRIZE SECTION */
+  .achieved-prize {
+    margin-top: 10px;
+  }
+
+  .achieved-prize-item {
+    padding: 10px 6px;
+  }
+
+  .achieved-prize {
+    padding: 20px;
+  }
+
+  .achieved-prize-number p {
+    margin: 0;
+  }
+
+  .astronaut-img img {
+    max-width: 500px;
+    top: 30%;
+    right: 0;
+  }
+
+  /* AWARD SECTION */
+  #award-section h3 {
+    font-size: 35px;
+  }
+  .awards-logos {
+    gap: 10px;
+  }
+  /* WINNER SECTION */
+  .wp-winner-wall-title img {
+    max-width: 100%;
+  }
+  /* FAQ SECTION */
+  /* FOOTER SECTION */
+}
+
+/* Small tablets (portrait mode) */
 @media (max-width: 768px) {
-    
+  /* HEADER SECTION */
+  /* INTRODUCTION SECTION */
+  .free-cash img, .giveaway img {
+    max-width: 100%;
+  }
+  .counter-box {
+    left: 23%;
+  }
+  .button-get-cash {
+    top: 216%;
+    left: 32%;
+  }
+  .effect-scroll-down {
+    left: 40%;
+    top: 266%;
+  }
+  .dolar-intro-box-absolute {
+    left: 53%;
+    top: 25%;
+  }
+  
+  .dolar-intro-box-absolute .col-md-2 img {
+    display: none;
+  }
+
+  .dolar-intro-box-relative .col-md-4 img {
+    display: none;
+  }
+  /* FEATURED SECTION */
+  .featured-track {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    place-items: center;
+  }
+
+  .featured-track img {
+    width: 100%; 
+    max-width: 200px;
+  }
+
+  #featured-section .container {
+    margin: 0 auto;
+  }
+
+  /* PRIZE SECTION */
+  .astronaut-img img {
+    max-width: 363px;
+    top: 12%;
+    right: 0;
+  }
+  .step-item {
+    width: 100%;
+  }
+  .step-list {
+    margin-top: 80px;
+  }
+  .how-to-get-prize {
+    max-width: 90%;
+  }
+  .step-how-to-get {
+    margin: 0 10px;
+  }
+  /* AWARD SECTION */
+  #award-section h3 {
+    font-size: 30px;
+  }
+  .awards-logos img {
+    max-width: 80px;
+  }
+  /* WINNER SECTION */
+  .carousel-item>.row .col-md-4 {
+    width: 35%;
+  }
+  .carousel-item>.row .col-md-7 {
+    width: 50%;
+  }
+  .winner-content p {
+    font-size: 25px;
+  }
+  .wp-button-carousel .btn-prev, .wp-button-carousel .btn-next {
+    width: 50px;
+    height: 50px;
+  }
+  /* FAQ SECTION */
+  .dolar-max img {
+    width: 130px;
+  }
+  /* FOOTER SECTION */
 }
 
-@media (max-width: 680px) {
-    
+/* Small devices (large phones, small tablets) */
+@media (max-width: 640px) {
+  /* HEADER SECTION */
+  /* INTRODUCTION SECTION */
+  .counter-box {
+    left: 16%;
+  }
+  .button-get-cash {
+    left: 30%;
+  }
+  /* FEATURED SECTION */
+  /* PRIZE SECTION */
+  .achieved-prize-item {
+    display: grid !important;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .achieved-prize-number {
+    text-align: center;
+  }
+
+  .step-how-to-get h2 {
+    margin-top: 25px;
+  }
+
+  .step-list {
+    margin-top: 40px;
+  }
+
+  .astronaut-img img {
+    max-width: 241px;
+    top: 26%;
+    right: 0;
+  }
+  
+
+  /* AWARD SECTION */
+  #award-section h3 {
+    font-size: 40px;
+  }
+
+  #award-section .container .d-flex {
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center !important;
+    justify-content: center !important;
+
+  }
+
+  .awards-logos img {
+    max-width: 90px;
+  }
+
+  /* WINNER SECTION */
+
+  #winner-section {
+    padding: 20px 0;
+  }
+
+  #winnerCarousel {
+    display: none;
+  }
+
+  #winnerCarouselForScreenSmall {
+    display: block;
+  }
+
+
+  /* FAQ SECTION */
+  /* FOOTER SECTION */
 }
 
-@media (max-width: 375px) {
-    
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+   /* HEADER SECTION */
+  /* INTRODUCTION SECTION */
+  .counter-box {
+    left: 10%;
+  }
+  .cluster-intro {
+    left: 11%;
+  }
+  .button-get-cash {
+    left: 26%;
+    top: 231%;
+  }
+  .effect-scroll-down {
+    left: 39%;
+    top: 302%;
+  }
+  /* FEATURED SECTION */
+  #featured-section {
+    padding: 20px;
+  }
+
+  /* PRIZE SECTION */
+  .achieved-prize {
+    width: 88%;
+  }
+  .step-how-to-get h2 {
+    font-size: 30px;
+    margin-top: 38px;
+  }
+  .prize-bg, .prize-overlay-bg {
+    min-height: 790px;
+  }
+  .prize-section {
+    height: 790px;
+  }
+
+  /* AWARD SECTION */
+  .awards-logos img {
+    max-width: 75px;
+  }
+  
+  /* WINNER SECTION */
+  .carousel-item>.row .col-md-4 {
+    width: 30%;
+  }
+
+  .carousel-item>.row .col-md-7 {
+    width: 60%;
+  } 
+  
+  .winner-content p {
+    font-size: 22px;
+  }
+  .winner-footer .winner-created-at, .winner-address {
+    font-size: 16px;
+  }
+  /* FAQ SECTION */
+  #faq-section .coin {
+    bottom: 0%;
+  }
+  /* FOOTER SECTION */
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+   /* HEADER SECTION */
+  /* INTRODUCTION SECTION */
+  .counter-box {
+    left: 3%;
+  } 
+
+  .button-get-cash {
+    left: 21%;
+    top: 247%;
+  }
+
+  .effect-scroll-down {
+    left: 35%;
+    top: 325%;
+  }
+
+  /* FEATURED SECTION */
+  /* PRIZE SECTION */
+
+  .astronaut-img img {
+    max-width: 182px;
+    top: 33%;
+  }
+
+  .achieved-prize {
+    width: 95%;
+    left: 10px;
+  }
+  .step-text {
+    font-size: 16px;
+  }
+  .step-number {
+    font-size: 16px;
+  }
+  .how-to-get-prize {
+    max-width: 95%;
+    left: 10px;
+  }
+
+  .step-item {
+    padding: 15px 18px;
+  }
+  /* AWARD SECTION */
+
+  #award-section .container .d-flex {
+    gap: 7px;
+  }
+  /* WINNER SECTION */
+  .winner-content p {
+    font-size: 18px;
+  }
+  /* FAQ SECTION */
+  .accordion-item-header {
+    font-size: 20px;
+  }
+  .accordion-item-body-content {
+    font-size: 16px;
+  }
+  .faq-title {
+    font-size: 50px;
+  }
+  .dolar-max img {
+    width: 116px;
+  }
+  #faq-section .coin {
+    bottom: 16%;
+  }
+
+  .faq-section {
+    min-height: 593px;
+  }
+  /* FOOTER SECTION */
+}
+
+/* Extra small devices (portrait phones, less than 360px) */
+@media (max-width: 360px) {
+  /* HEADER SECTION */
+  /* INTRODUCTION SECTION */
+  /* FEATURED SECTION */
+  /* PRIZE SECTION */
+  /* AWARD SECTION */
+  /* WINNER SECTION */
+  /* FAQ SECTION */
+  /* FOOTER SECTION */
 }

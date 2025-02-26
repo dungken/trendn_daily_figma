@@ -1,64 +1,81 @@
+/// COUNTER ///
 $(document).ready(function () {
-    const $carousel = $("#logoCarousel");
-    let startX = 0;
-    let endX = 0;
+    let countdownDate = new Date().getTime() + (3 * 60 * 60 * 1000) + (29 * 60 * 1000) + (42 * 1000);
 
-    // Khi bắt đầu chạm
-    $carousel.on("touchstart", function (e) {
-        startX = e.originalEvent.touches[0].clientX;
-    });
+    function updateCountdown() {
+        let now = new Date().getTime();
+        let distance = countdownDate - now;
 
-    // Khi kết thúc vuốt
-    $carousel.on("touchmove", function (e) {
-        endX = e.originalEvent.touches[0].clientX;
-    });
+        if (distance < 0) {
+            clearInterval(interval);
+            $(".count-number").text("0");
+            return;
+        }
 
-    // Khi ngón tay rời màn hình
-    $carousel.on("touchend", function () {
-        const diffX = startX - endX;
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        if (Math.abs(diffX) > 50) {
-            // Vuốt > 50px
-            if (diffX > 0) {
-                // Vuốt sang trái
-                $carousel.carousel("next");
-            } else {
-                // Vuốt sang phải
-                $carousel.carousel("prev");
+        function animateChange(element, newValue) {
+            let $el = $(element);
+            if ($el.text() !== newValue.toString()) {
+                $el.text(newValue);
+                $el.addClass("animate");
+                setTimeout(() => $el.removeClass("animate"), 300);
             }
         }
+
+        animateChange(".count-days h3", days);
+        animateChange(".count-hrs h3", hours);
+        animateChange(".count-mins h3", minutes);
+        animateChange(".count-secs h3", seconds);
+    }
+
+    updateCountdown();
+    let interval = setInterval(updateCountdown, 1000);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("handle-scroll-button").addEventListener("click", 
+        function () {
+        window.scrollBy({
+            top: window.innerHeight, // Scroll down by one viewport height
+            behavior: "smooth"
+        });
     });
 });
 
-// Chọn phần tử container logo
-const track = document.querySelector(".logo-track");
-const logos = track.innerHTML;
+// ACCORDION //
+const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
 
-// Nhân đôi nội dung để lấp đầy không gian
-track.innerHTML += logos;
+// Đóng tất cả accordion mặc định khi trang tải
+accordionItemHeaders.forEach(item => {
+  item.classList.remove("active");
+  item.parentElement.classList.remove("active"); // Bỏ màu nền khi đóng
+  item.nextElementSibling.style.maxHeight = 0;
+});
 
-////////////////// ANIMATION COUNTER //////////////////
-$(document).ready(function () {
-    function animateCounter(selector, start, end, step, totalTime) {
-        let currentValue = start;
-        const delay = totalTime / ((end - start) / step); // Calculate delay based on totalTime
+accordionItemHeaders.forEach(accordionItemHeader => {
+  accordionItemHeader.addEventListener("click", () => {
+    // Đóng tất cả accordion trước khi mở cái được click
+    accordionItemHeaders.forEach(item => {
+      if (item !== accordionItemHeader) {
+        item.classList.remove("active");
+        item.parentElement.classList.remove("active"); // Bỏ màu nền
+        item.nextElementSibling.style.maxHeight = 0;
+      }
+    });
 
-        const interval = setInterval(() => {
-            currentValue += step;
-            if (currentValue >= end) {
-                currentValue = end;
-                clearInterval(interval);
-            }
+    // Toggle trạng thái của accordion được click
+    accordionItemHeader.classList.toggle("active");
+    accordionItemHeader.parentElement.classList.toggle("active"); // Đổi màu nền
+    const accordionItemBody = accordionItemHeader.nextElementSibling;
 
-            // Format number with commas and add "+"
-            const formattedValue = currentValue.toLocaleString() + "+";
-            $(selector).html(`<span>${formattedValue}</span>`);
-        }, delay);
+    if (accordionItemHeader.classList.contains("active")) {
+      accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+    } else {
+      accordionItemBody.style.maxHeight = 0;
     }
-
-    // Counter 1: 0 -> 250 in 2 seconds
-    animateCounter("#counter1 span", 0, 250, 1, 2000);
-
-    // Counter 2: 0 -> 2500 in 2 seconds
-    animateCounter("#counter2 span", 0, 2500, 10, 2000);
+  });
 });
