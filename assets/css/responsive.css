@@ -63,6 +63,32 @@
   /* FOOTER SECTION */
 }
 
+@media (max-width: 1920px) {
+  .counter-box {
+    left: 22%;
+  }
+
+  .button-get-cash {
+    left: 30%;
+  }
+
+  .effect-scroll-down {
+    top: 285%;
+    left: 44%;
+  }
+
+  .button-get-cash .btn {
+    padding-top: 36px;
+    padding-right: 71px;
+    padding-bottom: 36px;
+    padding-left: 71px;
+    font-size: 42px;
+    font-weight: 700;
+    font-size: 22px;
+    border-radius: 32px;
+  }
+}
+
 /* Large devices (desktops, HD screens) */
 @media (max-width: 1200px) {
   /* HEADER SECTION */
@@ -153,6 +179,11 @@
 
   /* AWARD SECTION */
   /* WINNER SECTION */
+  .wp-winner-wall-title {
+    right: -47px;
+    top: -106px;
+  }
+
   /* FAQ SECTION */
   /* FOOTER SECTION */
 }
@@ -438,12 +469,18 @@
     display: none;
   }
   .wp-winner-wall-title {
-    text-align: center;
+    right: 86px;
+    top: -100px;
   }
   .winner-footer {
     border-left: none;
     margin-left: 20% !important;
   }
+
+  .carousel-item {
+    margin-top: 80px;
+  }
+
 
   /* FAQ SECTION */
   .dolar-max img {
@@ -714,6 +751,17 @@
     /* line-height: 1px; */ 
   }
 
+  .wp-winner-wall-title {
+    right: 0px;
+    top: -30px;
+    text-align: center;
+  } 
+
+  .carousel-item {
+    margin-top: 120px;
+  }
+
+
   /* FAQ SECTION */
   .accordion-item-header {
     font-size: 20px;
@@ -923,5 +971,9 @@
   .button-get-cash {
     left: 10%;
     top: 300%;  
+  }
+
+  .carousel-item {
+    margin-top: 140px;
   }
 }

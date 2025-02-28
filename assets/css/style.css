@@ -524,6 +524,13 @@ body {
     display: none;
 }
 
+.wp-winner-wall-title {
+    position: absolute;
+    z-index: 20;
+    right: 16%;
+    top: -60px;
+}
+
 .wp-winner-wall-title img {
     border-bottom: 2px solid;
     border-image-source: linear-gradient(90deg, #FFCF0E 0%, rgba(255, 207, 14, 0) 100%);
