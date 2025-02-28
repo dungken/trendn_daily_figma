@@ -1,9 +1,33 @@
-/* Extra large screens (large desktops) */
+@media (max-width: 1440px) {
+  .counter-box {
+    left: 13%;
+  }
+
+  .button-get-cash {
+    top: 240%;
+    left: 31%;
+  }
+
+  .effect-scroll-down {
+    top: 301%;
+    left: 42%;
+  }
+
+  .dolar-intro-box-relative {
+    max-width: 100%;
+  }
+
+  .dolar-intro-box-absolute {
+    max-width: 100%;
+  }
+}
+
+
 @media (max-width: 1400px) {
   /* HEADER SECTION */
   /* INTRODUCTION SECTION */
   .counter-box {
-    left: 9%;
+    left: 11%;
   }
 
   .button-get-cash {
@@ -13,7 +37,7 @@
 
   .effect-scroll-down {
     top: 300%;
-    left: 40%;
+    left: 39%;
   }
   /* FEATURED SECTION */
   /* PRIZE SECTION */
@@ -52,19 +76,21 @@
   }
 
   .counter-box {
-    left: 7%;
+    left: 16%;
   }
 
   .counter-item-box {
-    padding: 4px 17px;
+    padding: 4px 10px;
   }
 
   .button-get-cash {
-    left: 24%;
+    left: 27%;
+    top: 250%;
   }
 
   .effect-scroll-down {
-    left: 37%;
+    left: 41%;
+    top: 338%;
   }
 
   /* FEATURED SECTION */
@@ -145,7 +171,7 @@
   } 
 
   .counter-box {
-    left: 27%;
+    left: 32%;
   }
 
   .button-get-cash {
@@ -263,23 +289,61 @@
 @media (max-width: 768px) {
   /* HEADER SECTION */
   /* INTRODUCTION SECTION */
+    #button-scroll.show {
+      display: block !important;
+    }
+    #button-scroll {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      display: none;
+      z-index: 100;
+    }
+
+    .dolar-intro-box-relative {
+      width: 100%;
+    }
+
+    /* Hiệu ứng sóng lượn */
+    @keyframes waveGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    #button-scroll .btn {
+      background: linear-gradient(90deg, #F9A10D 0%, #DF0078 100%);
+      background-size: 200% 200%;
+      box-shadow: 0px 12px 32px 0px #F9E2123D;
+      padding: 30px 40px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22.5px;
+      color: #FFFFFF;
+      border-color: #e754a3;
+      width: 100%;
+
+      animation: waveGradient 3s infinite linear;
+    }
+
   .free-cash img, .giveaway img {
     max-width: 100%;
   }
   .counter-box {
-    left: 23%;
+    left: 30%;
   }
   .button-get-cash {
-    top: 216%;
-    left: 32%;
+    top: 223%;
+    left: 30%;
   }
   .effect-scroll-down {
-    left: 40%;
-    top: 266%;
+    left: 44%;
+    top: 282%;
   }
   .dolar-intro-box-absolute {
-    left: 53%;
     top: 25%;
+    width: 100%;
   }
   
   .dolar-intro-box-absolute .col-md-2 img {
@@ -308,6 +372,15 @@
     margin: 0 auto;
   }
 
+  .button-get-cash .btn {
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-right: 55px;
+    padding-bottom: 30px;
+    padding-left: 55px;
+    font-size: 25px;
+  }
+
   /* PRIZE SECTION */
   .astronaut-img img {
     max-width: 363px;
@@ -331,22 +404,47 @@
     font-size: 30px;
   }
   .awards-logos img {
-    max-width: 80px;
+    max-width: 93px;
+    background: #030339;
+    border-radius: 50px;
+    padding: 10px;
   }
   /* WINNER SECTION */
   .carousel-item>.row .col-md-4 {
     width: 35%;
   }
+  .carousel-item>.row .col-md-4 img {
+    width: 95%;
+  }
   .carousel-item>.row .col-md-7 {
     width: 50%;
   }
   .winner-content p {
-    font-size: 25px;
+    font-size: 30px;
   }
   .wp-button-carousel .btn-prev, .wp-button-carousel .btn-next {
     width: 50px;
     height: 50px;
   }
+  #winnerCarouselForScreenSmall {
+    display: block;
+  }
+
+  #winnerCarouselForScreenSmall .wp-winner-wall-title ~ .row {
+    justify-content: center !important;
+  }
+  
+  #winnerCarousel {
+    display: none;
+  }
+  .wp-winner-wall-title {
+    text-align: center;
+  }
+  .winner-footer {
+    border-left: none;
+    margin-left: 20% !important;
+  }
+
   /* FAQ SECTION */
   .dolar-max img {
     width: 130px;
@@ -359,11 +457,14 @@
   /* HEADER SECTION */
   /* INTRODUCTION SECTION */
   .counter-box {
-    left: 16%;
+    left: 23%;
   }
   .button-get-cash {
     left: 30%;
   }
+
+
+
   /* FEATURED SECTION */
   /* PRIZE SECTION */
   .achieved-prize-item {
@@ -415,13 +516,7 @@
     padding: 20px 0;
   }
 
-  #winnerCarousel {
-    display: none;
-  }
 
-  #winnerCarouselForScreenSmall {
-    display: block;
-  }
 
 
   /* FAQ SECTION */
@@ -433,14 +528,14 @@
    /* HEADER SECTION */
   /* INTRODUCTION SECTION */
   .counter-box {
-    left: 10%;
+    left: 13%;
   }
   .cluster-intro {
-    left: 11%;
+    left: 10%;
   }
   .button-get-cash {
-    left: 26%;
-    top: 231%;
+    left: 22%;
+    top: 236%;
   }
   .effect-scroll-down {
     left: 39%;
@@ -468,12 +563,12 @@
 
   /* AWARD SECTION */
   .awards-logos img {
-    max-width: 75px;
+    max-width: 101px;
   }
   
   /* WINNER SECTION */
   .carousel-item>.row .col-md-4 {
-    width: 30%;
+    width: 35%;
   }
 
   .carousel-item>.row .col-md-7 {
@@ -496,20 +591,47 @@
 /* Small devices (phones) */
 @media (max-width: 480px) {
    /* HEADER SECTION */
+  .header-section strong, .header-section span {
+    font-size: 12px;
+  }
+
+  .header-section img {
+    width: 70px;
+  }
   /* INTRODUCTION SECTION */
   .counter-box {
-    left: 3%;
-  } 
+    left: 8%;
+  }
+
 
   .button-get-cash {
-    left: 21%;
-    top: 247%;
+    left: 13%;
+    top: 273%;
+  }
+
+  #button-get-cash-mobile.fixed {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    z-index: 999;
   }
 
   .effect-scroll-down {
     left: 35%;
-    top: 325%;
+    top: 432%;
   }
+
+  .logo-trendn-daily img {
+    max-width: 240px;
+  }
+
+  .button-get-cash .btn {
+    font-size: 20px;
+  }
+
 
   /* FEATURED SECTION */
   /* PRIZE SECTION */
@@ -517,17 +639,21 @@
   .astronaut-img img {
     max-width: 182px;
     top: 33%;
+    opacity: 0.5;
   }
 
   .achieved-prize {
     width: 95%;
     left: 10px;
+    display: grid !important;
   }
   .step-text {
-    font-size: 16px;
+    font-size: 14px;
+    flex-basis: 70%;
   }
   .step-number {
     font-size: 16px;
+    flex-basis: 20%;
   }
   .how-to-get-prize {
     max-width: 95%;
@@ -537,15 +663,57 @@
   .step-item {
     padding: 15px 18px;
   }
+
+  .prize-bg, .prize-overlay-bg {
+    min-height: 850px;
+  }
+
+  .prize-section {
+    height: 850px;
+  }
+
+  .achieved-prize-item {
+    background: #143cbe;
+    margin: 0 2px;
+  }
+
+  .achieved-prize-number p {
+    margin: 15px;
+  }
+
   /* AWARD SECTION */
 
   #award-section .container .d-flex {
-    gap: 7px;
+    gap: 30px;
   }
+
+  .step-how-to-get h2 {
+    line-height: 40px;
+    font-size: 26px;
+    margin-top: 80px;
+  }
+
   /* WINNER SECTION */
   .winner-content p {
-    font-size: 18px;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 8px;
   }
+
+  .carousel-item>.row .col-md-4 img {
+    width: 115%;
+  }
+
+  .wp-winner-wall-title img {
+    padding: 18px;
+  }
+
+  .winner-footer {
+    border-left: none;
+    margin-left: 5% !important;
+    /* line-height: 1px; */ 
+  }
+
   /* FAQ SECTION */
   .accordion-item-header {
     font-size: 20px;
@@ -569,14 +737,191 @@
   /* FOOTER SECTION */
 }
 
+@media (max-width: 375px) {
+  .winner-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .carousel-item>.row .col-md-4 img {
+    width: 121%;
+  }
+
+  .wp-winner-wall-title p {
+    margin-bottom: 0;
+  }
+
+  .winner-footer .winner-name {
+    font-size: 20px;
+  }
+
+  .winner-footer .winner-created-at, .winner-address {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .winner-footer img {
+    max-width: 134px;
+  }
+
+  .logo-trendn-daily img {
+    max-width: 208px;
+  }
+
+  .button-get-cash .btn {
+    font-size: 18px;
+  }
+
+  .icon-achieved-prize-item {
+    width: 36px;
+  }
+
+  .achieved-prize-item p {
+    font-size: 14px;
+  }
+}
+
 /* Extra small devices (portrait phones, less than 360px) */
 @media (max-width: 360px) {
   /* HEADER SECTION */
   /* INTRODUCTION SECTION */
+  .logo-trendn-daily img {
+    max-width: 175px;
+  }
+
+  .counter-item-box h3 {
+    font-size: 25px;
+  }
+
+  .counter-item-box {
+    padding: 1px 10px;
+  }
+
+  .counter-box {
+    left: -10px;
+  }
+
+  .button-get-cash {
+    left: 16%;
+    top: 300%;
+  }
+
+  .effect-scroll-down {
+    left: 30%;
+    top: 460%;
+  }
+
+  .button-get-cash .btn {
+    padding: 30px 35px;
+    font-size: 20px;
+  }
+
   /* FEATURED SECTION */
   /* PRIZE SECTION */
+  .achieved-prize {
+    width: 94%;
+    left: 10px;
+    display: grid !important;
+    padding: 10px;
+  }
+
+  .icon-achieved-prize-item {
+    width: 30px;
+  }
+
+  .icon-achieved-prize-item ~ p{
+    font-size: 13px;
+  }
+
+  .achieved-prize-number p {
+    margin: 10px;
+  }
+
+  .achieved-prize-item {
+    min-height: 145px;
+  }
+  .step-how-to-get h2 {
+    font-size: 20px;
+    margin-top: 70px;
+    line-height: 30px;
+  }
+
+  .astronaut-img img {
+    opacity: 0.5;
+  }
+
+  .step-number, .step-text {
+    font-size: 14px;
+  }
   /* AWARD SECTION */
+  #award-section h3 {
+    font-size: 35px;
+  }
+
+  #award-section .container .d-flex {
+    gap: 14px;
+  }
+
   /* WINNER SECTION */
+
+  .winner-content p {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 0px 14px;
+  }
+
+  .dolar-max img {
+    width: 90px;
+  }
+
+  .winner-content {
+    margin-top: 20px;
+
+  }
+
+  #winner-section .container {
+    padding: 0 10px;
+  }
+
+  #winnerCarouselForScreenSmall .wp-winner-wall-title ~ .row {
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    place-content: center;
+    margin-top: 25px;
+  }
+
+  .carousel-item>.row .col-md-4 {
+    width: 85%;
+    padding-left: 0;
+  }
+
+  .carousel-item>.row .col-md-7 {
+    width: 100%;
+  }
+
+  .carousel-item>.row .col-md-4 img {
+    width: 100%;
+}
+
+
   /* FAQ SECTION */
+
+  #faq-section .dolar-max {
+    top: -4%;
+
+  }
+
+  .accordion-item-header {
+    font-size: 18px;
+  }
   /* FOOTER SECTION */
+}
+
+
+@media (max-width: 320px) {
+  .button-get-cash {
+    left: 10%;
+    top: 300%;  
+  }
 }

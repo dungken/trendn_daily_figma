@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insurify</title>
+    <title>Trend'n Daily</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -18,6 +18,9 @@
 </head>
 
 <body>
+    <div id="button-scroll">
+        <button class="btn" id="">Get Cash Now</button>
+    </div>
     <!-- /////////////////////////// HEADER SECTION /////////////////////////// -->
     <section id="header-section">
         <div class="container">
@@ -106,12 +109,14 @@
                 </div>
 
                 <div class="button-get-cash">
-                    <button class="btn">Get Cash Now</button>
+                    <button class="btn" id="button-get-cash">Get Cash Now</button>
                 </div>
     
                 <div class="effect-scroll-down" id="handle-scroll-button">
                     <h2 class="scroll-down-title" >SCROLL DOWN</h2>
-                    <img src="assets/images/intro/down_arrow.png" alt="" class="img-fluid" >
+
+                    <svg id="SvgjsSvg1001" width="288" height="288" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><defs id="SvgjsDefs1002"></defs><g id="SvgjsG1008"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 31 53" width="70" height="70"><path fill="url(#a)" d="M30.5 39.7331L15.5605 47.2028L0.807667 39.7331L0.807667 45.3354L15.5605 52.8052L30.5 45.3354L30.5 39.7331ZM30.5 -8.07347L15.5605 -0.790452L0.807669 -8.07347L0.807669 -2.47114L15.5605 4.81187L30.5 -2.47114L30.5 -8.07347ZM30.5 7.7998L15.5605 15.2696L0.807668 7.7998L0.807668 13.4021L15.5605 20.8719L30.5 13.4021L30.5 7.7998ZM30.5 23.8598L15.5605 31.3296L0.807668 23.8598L0.807667 29.4621L15.5605 36.9319L30.5 29.4621L30.5 23.8598ZM30.5 -56.0668L15.5605 -48.597L0.807671 -56.0668L0.807671 -50.4644L15.5605 -42.9947L30.5 -50.4644L30.5 -56.0668ZM15.5605 -80.5302L0.807673 -88L0.807672 -82.3977L15.5605 -74.9279L30.5 -82.3977L30.5 -88L15.5605 -80.5302ZM30.5 -24.1335L15.5605 -16.6637L0.620914 -24.1335L0.620913 -18.5312L15.5605 -11.0614L30.5 -18.5312L30.5 -24.1335ZM30.5 -71.94L15.5605 -64.657L0.620916 -71.94L0.620915 -66.3377L15.5605 -59.0546L30.5 -66.3377L30.5 -71.94ZM30.5 -40.0068L15.5605 -32.537L0.620914 -40.0068L0.620914 -34.4044L15.5605 -26.9347L30.5 -34.4044L30.5 -40.0068Z"></path><defs><linearGradient id="a" x1="30.508" x2="30.508" y1="52.858" y2="-88.099" gradientUnits="userSpaceOnUse"><stop stop-color="#2a63c3" class="stopColor2A63C3 svgShape"></stop><stop offset=".165" stop-color="#2a63c3" stop-opacity=".2" class="stopColor2A63C3 svgShape"></stop><stop offset=".34" stop-color="#2a63c3" stop-opacity="0" class="stopColor2A63C3 svgShape"></stop></linearGradient></defs></svg></g></svg>
+
                 </div>
                
             </div>
@@ -181,7 +186,7 @@
                             <div class="step-item d-flex gap-3"> 
                                 <p class="step-number">STEP 2</p> 
                                 <p class="step-text">
-                                    Click the "<span style="color: rgba(255, 207, 14, 1);;">Enter Now</span>" button and complete the three easy steps
+                                    Click the "<span style="color: rgba(255, 207, 14, 1);;">Get Cash Now</span>" button and complete the three easy steps
                                 </p>
                             </div>
                             <div class="step-item d-flex gap-3"> 
@@ -224,16 +229,17 @@
     <section id="winner-section">
         <div class="container">
             <div id="winnerCarousel" class="carousel slide" data-bs-ride="carousel">
+              
                 <div class="carousel-inner">
                     <!-- Slide 1 -->
                     <div class="carousel-item active">
                         <div class="row justify-content-around align-items-center gap-1">
                             <div class="col-md-4">
-                                <img src="assets/images/winner/winner_avatar.png" alt="Winner Avatar">
+                                <img src="assets/images/winner/winner_avatar.png" alt="Winner Avatar" class="rounded">
                             </div>
                             <div class="col-md-7">
                                 <div class="wp-winner-wall-title">
-                                    <img src="assets/images/winner/winner_wall_title.png" alt="Winner Wall" />
+                                    <img src="assets/images/winner/winner_wall_title.png" alt="Winner Wall" class="rounded"/>
                                     <p>100,000+ Winners Have Spoken: See Why Trendndaily Is the Place to Win</p>
                                 </div>
                                 <div class="winner-content">
@@ -259,14 +265,14 @@
                     </div>
         
                     <!-- Slide 2 -->
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <div class="row justify-content-around align-items-center gap-1">
                             <div class="col-md-4">
-                                <img src="assets/images/winner/winner_avatar.png" alt="Winner Avatar">
+                                <img src="assets/images/winner/MrBeastAvatar.png" alt="Winner Avatar" class="rounded">
                             </div>
                             <div class="col-md-7">
                                 <div class="wp-winner-wall-title">
-                                    <img src="assets/images/winner/winner_wall_title.png" alt="Winner Wall" />
+                                    <img src="assets/images/winner/winner_wall_title.png" alt="Winner Wall" class="rounded"/>
                                     <p>100,000+ Winners Have Spoken: See Why Trendndaily Is the Place to Win</p>
                                 </div>
                                 <div class="winner-content">
@@ -300,7 +306,7 @@
                     <!-- Slide 1 -->
                     <div class="carousel-item active">
                         <div class="wp-winner-wall-title">
-                            <img src="assets/images/winner/winner_wall_title.png" alt="Winner Wall" />
+                            <img src="assets/images/winner/winner_wall_title.png" alt="Winner Wall" class="rounded"/>
                             <p>100,000+ Winners Have Spoken: See Why Trendndaily Is the Place to Win</p>
                         </div>
                         <div class="row justify-content-around align-items-center gap-1">
@@ -329,14 +335,14 @@
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <div class="wp-winner-wall-title">
-                            <img src="assets/images/winner/winner_wall_title.png" alt="Winner Wall" />
+                            <img src="assets/images/winner/winner_wall_title.png" alt="Winner Wall" class="rounded"/>
                             <p>100,000+ Winners Have Spoken: See Why Trendndaily Is the Place to Win</p>
                         </div>
                         <div class="row justify-content-around align-items-center gap-1">
                             <div class="col-md-4">
-                                <img src="assets/images/winner/winner_avatar.png" alt="Winner Avatar">
+                                <img src="assets/images/winner/MrBeastAvatar.png" alt="Winner Avatar">
                             </div>
                             <div class="col-md-7">
                                 <div class="winner-content">
@@ -359,8 +365,6 @@
                         </div>
                     </div>
                 </div>
-        
-                  
             </div>
         </div>
 
@@ -374,6 +378,7 @@
             </button>
         </div>      
     </section>  
+
     <!-- /////////////////////////// FAQ SECTION  /////////////////////////// -->
     <section id="faq-section">
         <div class="faq-section"></div>
@@ -439,7 +444,6 @@
     <!-- /////////////////////////// FOOTER SECTION  /////////////////////////// -->
     <section id="footer">
         <div class="container">
-            <a href="#">Sign Up</a> 
             <a href="#">Terms & Conditions</a> 
             <a href="#">Privacy Policy</a> 
             <a href="#">Official Rules</a> 
@@ -449,7 +453,7 @@
         </div>
     </section>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

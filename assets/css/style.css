@@ -22,6 +22,10 @@ body {
 }
 
 /* /////////////////////////// INTRODUCTION SECTION  /////////////////////////// */
+#button-scroll {
+    display: none;
+}
+
 #introduction-section {
     position: relative;
     height: 650px;
@@ -142,8 +146,8 @@ body {
 .counter-box {
     align-items: center;
     position: absolute;
-    top: 151%;
-    left: 21%;
+    top: 157%;
+    left: 30%;
     padding: 12px;
     border-radius: 15px;
     background: linear-gradient(180deg, rgba(22, 97, 237, 0.6) 0%, rgba(0, 27, 144, 0.6) 76%);
@@ -205,10 +209,14 @@ body {
     left: 25%;
 }
 
+#wp-button-get-cash {
+    display: none;
+}
+
 .button-get-cash {
     position: absolute;
-    top: 215%;
-    left: 35%;
+    top: 224%;
+    left: 40%;
     animation: smooth-zoom 2s infinite ease-in-out;
 }
 
@@ -230,9 +238,10 @@ body {
 
 /* Scroll Down Effect */
 .effect-scroll-down {
-    top: 260%;
-    left: 43%;
+    top: 273%;
+    left: 46%;
     position: absolute;
+    display: flex;
 }
 
 .scroll-down-title {
@@ -248,9 +257,12 @@ body {
     cursor: pointer;
 }
 
-.effect-scroll-down img {
+.effect-scroll-down svg {
     animation: bounce 1.5s infinite;
     cursor: pointer;
+    right: 0;
+    position: absolute;
+    width: 84px;
 }
 
 /* Bounce Animation */
@@ -330,6 +342,7 @@ body {
     padding-bottom: 20px;
     padding-left: 40px;
     border-radius: 12px;
+    margin-right: 100px;
 }
 
 .achieved-prize-number {
@@ -419,6 +432,7 @@ body {
     line-height: 22.5px;
     width: 20%;
     margin-bottom: 0;
+    flex-basis: 20%;
 }
 
 .step-text {
@@ -428,6 +442,7 @@ body {
     color: rgba(255, 255, 255, 1);
     margin: 0;
     text-transform: uppercase;
+    flex-basis: 90%;
 }
 
 /* Astronaut Image */
@@ -579,13 +594,13 @@ body {
 
 .wp-button-carousel .btn-prev {
     position: absolute;
-    left: 10%;
+    left: 2%;
     top: 50%;
 }
 
 .wp-button-carousel .btn-next {
     position: absolute;
-    right: 10%;
+    right: 2%;
     top: 50%;
 }
 
@@ -697,9 +712,10 @@ body {
     padding: 0px 34px 25px 34px;
     border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
     font-size: 18px;
-    color: #FFFFFFB2;
+    color: #FFFFFF;
     font-weight: 500;
     font-size: 18px;
+    font-weight: normal;
 }
 
 .faq-title {

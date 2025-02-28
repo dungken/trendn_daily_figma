@@ -79,3 +79,20 @@ accordionItemHeaders.forEach(accordionItemHeader => {
     }
   });
 });
+
+/// SCROLL AND FIXED BUTTON
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.getElementById("button-scroll");
+  const header = document.getElementById("introduction-section");
+
+  function checkScroll() {
+      const rect = header.getBoundingClientRect();
+      if ((-rect.top) >= 600) {
+        button.classList.add("show");
+      } else {
+        button.classList.remove("show");
+      }
+  }
+
+  window.addEventListener("scroll", checkScroll);
+});
